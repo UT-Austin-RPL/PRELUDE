@@ -1,0 +1,8 @@
+Configuration: config
+Data: data
+BC Checkpoint: save/bc_checkpoint
+RL Checkpoint: save/rl_checkpoint
+Dataset Sim: save/dataset_sim
+Dataset Real: save/dataset_real
+Raw Data Sim: save/raw_sim
+Raw Data Real: save/raw_real
