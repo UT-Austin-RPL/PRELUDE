@@ -10,6 +10,11 @@ We tackle the problem of perceptive locomotion in dynamic environments. In this 
 
 If you find our work useful in your research, please consider [citing](#citing).
 
+## Dependencies
+- [Robomimic](https://github.com/ARISE-Initiative/robomimic/)
+- [Tianshou](https://github.com/thu-ml/tianshou/)
+- [PyBullet](https://github.com/bulletphysics/bullet3/)
+- [PyTorch](https://github.com/pytorch/pytorch)
 
 ## Installation
 Install the environments and dependencies by running the following commands.
@@ -18,16 +23,14 @@ pip3 install -e .
 ```
 You need to locate asset files to `./data/*`. These asset files are found [here](https://utexas.box.com/s/oa5c39blv9ma4h4lkdkv84n5zj3mxcg5).
 
-## Instructions on running scripts
+## Creating a demo dataset for Navigation Controller
 
-### Creating a demo dataset for Navigation Controller
 For collecting human demonstration data for Navigation Controller, please use the following commands. You may need a Spacemouse.
 ```
 python3 scripts/demo_nav.py --env_type=ENV_TYPE --demo_name=DEMO_NAME
 ```
 You may be able to specify the difficulty of environments by changing ENV_TYPE. Collected data would be saved in `./save/data_sim/DEMO_NAME`. Rendering videos and extra logs would be saved in `./save/raw_sim/DEMO_NAME`.
 
-### Converting demo data into a dataset
 To convert the collected data into .hdf5 dataset file, please use the following commands. The converted dataset would be saved in `PATH_TO_TARGET_FILE`. 
 ```
 python3 scripts/utils/convert_dataset.py --folder=PATH_TO_DATA_FOLDER --demo_path=PATH_TO_TARGET_FILE
@@ -37,7 +40,7 @@ Then, please run the following commands to split the dataset for training and ev
 python3 scripts/utils/split_train_val.py --dataset=PATH_TO_TARGET_FILE
 ```
 
-### Training
+## Training
 For training the Gait Controller, please use the following commands. Trained files would be saved in `./save/rl_checkpoint/gait/GAIT_POLICY`
 ```
 python3 scripts/train_gait.py --gait_policy=GAIT_POLICY
@@ -48,7 +51,7 @@ For training Navigation Controller, please use the following commands. Trained f
 python3 scripts/train_nav.py
 ```
 
-### Evaluation
+## Evaluation
 You should locate pre-trained data to `./save/*`. These pre-trained data would be released later.
 
 For evaluating Gait Controller only, please use the following commands. The checkpoints of the Gait Controller at `./save/rl_checkpoint/gait/RL_POLICY` would be loaded.
