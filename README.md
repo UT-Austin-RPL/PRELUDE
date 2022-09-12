@@ -1,74 +1,43 @@
-# PRELUDE
-[Mingyo Seo](https://mingyoseo.com/), [Ryan Gupta](), [Yifeng Zhu](https://www.cs.utexas.edu/~yifengz), [Alexy Skoutnev](https://alexyskoutnev.github.io/alexyskoutnev-github.io/index.html), [Luis Sentis](https://sites.google.com/view/lsentis), [Yuke Zhu](https://www.cs.utexas.edu/~yukez/)
+# Research Project Website Template
+This is a template for research project website. I assume that we are using jekyll for website generation by default.
 
-[Project](https://sites.google.com/view/perceptive-legged-locomotion)
+## Put into your own jekyll based website
+1. Create project folder
+```shell
+	mkdir _projects
+```
+1. Clone / copy the whole repo into `_projects` repo
 
-![intro](pipeline.png)
+1. Modify `_config.yml`:
 
-## Introduction
-We tackle the problem of perceptive locomotion in dynamic environments. In this problem, a quadruped robot must exhibit robust and agile walking behaviors in response to environmental clutter and moving obstacles. We present a hierarchical learning framework, named PRELUDE, which decomposes the problem of perceptive locomotion into high-level decision making to predict navigation commands and low-level gait generation to realize the target commands. In this framework, we train the high-level navigation controller with imitation learning on human demonstrations collected on a steerable cart and the low-level gait controller with reinforcement learning (RL). Our method is, therefore, able to acquire complex navigation behaviors from human supervision and discover versatile gaits from trial and error. We demonstrate the effectiveness of our approach in simulation and with hardware experiments. Compared to state-of-the-art RL baselines, our method outperforms them by 38.6% in average distance traversed.
-
-If you find our work useful in your research, please consider [citing](#citing).
-
-## Dependencies
-- [Robomimic](https://github.com/ARISE-Initiative/robomimic/)
-- [Tianshou](https://github.com/thu-ml/tianshou/)
-- [PyBullet](https://github.com/bulletphysics/bullet3/)
-- [PyTorch](https://github.com/pytorch/pytorch)
-
-## Installation
-Install the environments and dependencies by running the following commands.
-```
-pip3 install -e .
-```
-You need to locate asset files to `./data/*`. These asset files are found [here](https://utexas.box.com/s/oa5c39blv9ma4h4lkdkv84n5zj3mxcg5).
-
-## Creating a demo dataset for Navigation Controller
-
-For collecting human demonstration data for Navigation Controller, please use the following commands. You may need a Spacemouse.
-```
-python3 scripts/demo_nav.py --env_type=ENV_TYPE --demo_name=DEMO_NAME
-```
-You may be able to specify the difficulty of environments by changing ENV_TYPE. Collected data would be saved in `./save/data_sim/DEMO_NAME`. Rendering videos and extra logs would be saved in `./save/raw_sim/DEMO_NAME`.
-
-To convert the collected data into .hdf5 dataset file, please use the following commands. The converted dataset would be saved in `PATH_TO_TARGET_FILE`. 
-```
-python3 scripts/utils/convert_dataset.py --folder=PATH_TO_DATA_FOLDER --demo_path=PATH_TO_TARGET_FILE
-```
-Then, please run the following commands to split the dataset for training and evaluation. The script would overwrite the split dataset would on the original dataset file.
-```
-python3 scripts/utils/split_train_val.py --dataset=PATH_TO_TARGET_FILE
-```
-
-## Training
-For training the Gait Controller, please use the following commands. Trained files would be saved in `./save/rl_checkpoint/gait/GAIT_POLICY`
-```
-python3 scripts/train_gait.py --gait_policy=GAIT_POLICY
-```
-
-For training Navigation Controller, please use the following commands. Trained files would be saved in `./save/bc_checkpoint`.
-```
-python3 scripts/train_nav.py
-```
-
-## Evaluation
-You should locate pre-trained data to `./save/*`. These pre-trained data would be released later.
-
-For evaluating Gait Controller only, please use the following commands. The checkpoints of the Gait Controller at `./save/rl_checkpoint/gait/RL_POLICY` would be loaded.
-```
-python3 scripts/eval_gait.py --gait_policy=GAIT_POLICY
-```
-
-To evaluate PRELUDE with both Gait Controller and Navigation Controller, please use the following commands. The checkpoints of the Navigation Controller at `./save/bc_checkpoint/NAV_POLICY` would be loaded.
-```
-python3 scripts/eval_nav.py --gait_policy=GAIT_POLICY --nav_policy=NAV_POLICY --gait_policy=GAIT_POLICY
+``` yaml
+collections:
+	projects:
+		output: true
 ```
 
 
-## Dataset and pre-trained models
-We provide our demonstration dataset in simulation environments ([link]()) and trained models of the Navigation Controller ([link](https://utexas.box.com/s/l6n5unyswuol4gxwam552u1jkogbaakq)) and the Gait Controller ([link](https://utexas.box.com/s/uv41n7550t1ao7wv0io0er2s8r2ivu2x)).
+## Color
+We will use the color pattern following UT color (Burnt Orange and
+Charcoal)[https://sites.utexas.edu/cofa-communications/college-brand/color/]: 
+- Burnt Orange: #bf5700
+- Charcoal: #333f48
 
 
-## Citing
+## Test the website locally
+1. Create a folder
+
+1. Put the `_projects_` folder under the created one.
+
+1. Generate the jekylll configs
+
+``` shell
+bundle init
+bundle config set --local path 'vendor/bundle'
+bundle add jekyll
+bundle exec jekyll new --force --skip-bundle .
 ```
-```
+
+1. Run `bundle exec jekyll serve`
+
+1. Go to `http://127.0.0.1:4000/projects/project-website-template/` (Default)
