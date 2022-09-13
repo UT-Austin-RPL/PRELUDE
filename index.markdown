@@ -143,12 +143,26 @@ highlight {
 <!-- </tbody> -->
 <!-- </table> -->
 
+<!--
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
   <tbody>
     <tr> 
       <td align="center" valign="middle">
-        <iframe width="800" height="450" src="https://www.youtube.com/embed/rdiDvBMQSrg?showinfo=0&playlist=rdiDvBMQSrg&autoplay=1&loop=1" autoplay="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/PdT8vBv9Asg?showinfo=0&playlist=PdT8vBv9Asg&autoplay=1&loop=1" autoplay="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </td>
+    </tr>
+  </tbody>
+</table>
+-->
+
+<table border="0" cellspacing="10" cellpadding="0" align="center">
+  <tbody>
+    <tr>
+      <td align="center" valign="middle">
+        <video muted autoplay loop width="800">
+          <source src="./src/video/header.mp4"  type="video/mp4">
+        </video>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -173,7 +187,7 @@ We tackle the problem of perceptive locomotion in dynamic environments. In this 
     <tbody>
       <tr> 
         <td align="center" valign="middle">
-          <a href="./src/approach.gif"><img src="./src/approach.gif" style="width:100%;"> </a>
+          <a href="./src/figure/approach.gif"><img src="./src/approach.gif" style="width:100%;"> </a>
         </td>
       </tr>
     </tbody>
@@ -190,7 +204,7 @@ We tackle the problem of perceptive locomotion in dynamic environments. In this 
 <br><br><hr> <h1 align="center">Hierarchical Perceptive Locomotion Model</h1> <!-- <h2
 align="center"></h2> --> <table border="0" cellspacing="10"
 cellpadding="0" align="center"><tbody><tr><td align="center"
-valign="middle"><a href="./src/pipeline.png"> <img
+valign="middle"><a href="./src/figure/pipeline.png"> <img
 src="./src/pipeline.png" style="width:100%;"> </a></td>
 </tr> </tbody> </table>
 
@@ -208,6 +222,7 @@ src="./src/pipeline.png" style="width:100%;"> </a></td>
 
   </p></td></tr></table>
 
+  <!--
   <table border="0" cellspacing="10" cellpadding="0" align="center"> 
     <tbody>
       <tr> 
@@ -217,6 +232,20 @@ src="./src/pipeline.png" style="width:100%;"> </a></td>
       </tr>
     </tbody>
   </table>
+  -->
+  
+  <table border="0" cellspacing="10" cellpadding="0" align="center">
+    <tbody>
+      <tr>
+        <td align="center" valign="middle">
+          <video muted autoplay loop width="798">
+            <source src="./src/video/evaluation.mp4"  type="video/mp4">
+          </video>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
 
 <hr>
 
@@ -226,48 +255,73 @@ src="./src/pipeline.png" style="width:100%;"> </a></td>
   We deployed in unseen human-centered environments with static and dynamic obstacles. It exhibits robust locomotion behaviors with on-board visual perception.
   </p></td></tr></table>
 
+
+  <!--
   <table border="0" cellspacing="10" cellpadding="0" align="center"> 
     <tr>
         <td align="center" valign="middle">
-          <!-- <iframe width="450" height="253" src="https://www.youtube.com/embed/K3pYobHhzDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           <iframe width="600" height="337" src="https://www.youtube.com/embed/K3pYobHhzDs?autoplay=1&mute=1&playlist=K3pYobHhzDs&loop=1" autoplay="true" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </td>
       </tr>
-          <!-- <iframe width="450" height="253" src="https://www.youtube.com/embed/UfZjapJBbUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          <!-- <iframe width="450" height="253" src="https://www.youtube.com/embed/UfZjapJBbUs?autoplay=1&mute=1&playlist=UfZjapJBbUs&loop=1" autoplay="true" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       <tr>
         <td align="center" valign="middle">
-          <!-- <iframe width="450" height="253" src="https://www.youtube.com/embed/cc3b8VM7Jb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           <iframe width="600" height="337" src="https://www.youtube.com/embed/cc3b8VM7Jb0?autoplay=1&mute=1&playlist=cc3b8VM7Jb0&loop=1" autoplay="true" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </td>
       </tr>
       <tr>
         <td align="center" valign="middle">
-          <!-- <iframe width="450" height="253" src="https://www.youtube.com/embed/9yEtgGHy9Aw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           <iframe width="600" height="337" src="https://www.youtube.com/embed/9yEtgGHy9Aw?autoplay=1&mute=1&playlist=9yEtgGHy9Aw&loop=1" autoplay="true" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </td>
       </tr>
   </table>
+  -->
+  <table border="0" cellspacing="10" cellpadding="0" align="center">
+    <tbody>
+      <tr>
+        <td align="center" valign="middle">
+          <video muted autoplay loop width="600">
+            <source src="./src/video/deploy1.mp4"  type="video/mp4">
+          </video>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center" valign="middle">
+          <video muted autoplay loop width="600">
+            <source src="./src/video/deploy3.mp4"  type="video/mp4">
+          </video>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center" valign="middle">
+          <video muted autoplay loop width="600">
+            <source src="./src/video/deploy4.mp4"  type="video/mp4">
+          </video>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
 
 
-
-
+<!--
 <br><hr> <table align=center width=800px> <tr> <td> <left>
 <center><h1>Acknowledgements</h1></center> -
-<!-- The webpage template was borrowed from some <a href="https://nvlabs.github.io/SPADE/">GAN folks</a>. -->
+ The webpage template was borrowed from some <a href="https://nvlabs.github.io/SPADE/">GAN folks</a>.
 </left></td></tr></table>
 <br><br>
+-->
 
-<div style="display:none">
-<!-- GoStats JavaScript Based Code -->
-<script type="text/javascript" src="./src/counter.js"></script>
-<script type="text/javascript">_gos='c3.gostats.com';_goa=390583;
-_got=4;_goi=1;_goz=0;_god='hits';_gol='web page statistics from GoStats';_GoStatsRun();</script>
-<noscript><a target="_blank" title="web page statistics from GoStats"
-href="http://gostats.com"><img alt="web page statistics from GoStats"
-src="http://c3.gostats.com/bin/count/a_390583/t_4/i_1/z_0/show_hits/counter.png"
-style="border-width:0" /></a></noscript>
-</div>
-<!-- End GoStats JavaScript Based Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQHH255W04"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VQHH255W04');
+</script>
+
 <!-- </center></div></body></div> -->
 
