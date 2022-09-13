@@ -187,7 +187,7 @@ We tackle the problem of perceptive locomotion in dynamic environments. In this 
     <tbody>
       <tr> 
         <td align="center" valign="middle">
-          <a href="./src/figure/approach.gif"><img src="./src/approach.gif" style="width:100%;"> </a>
+          <a href="./src/figure/approach.gif"><img src="./src/figure/approach.gif" style="width:100%;"> </a>
         </td>
       </tr>
     </tbody>
@@ -205,7 +205,7 @@ We tackle the problem of perceptive locomotion in dynamic environments. In this 
 align="center"></h2> --> <table border="0" cellspacing="10"
 cellpadding="0" align="center"><tbody><tr><td align="center"
 valign="middle"><a href="./src/figure/pipeline.png"> <img
-src="./src/pipeline.png" style="width:100%;"> </a></td>
+src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
 </tr> </tbody> </table>
 
 <table width=800px><tr><td> <p align="justify" width="20%">The high-level navigation policy generates the target velocity command at 10Hz from the onboard RGB-D camera observation and robot heading. The target velocity command, including linear and angular velocities, is used as input to the low-level gait controller along with the buffer of recent robot states. The low-level gait policy predicts the joint-space actions as the desired joint positions at 38Hz and sends them to the quadruped robot for actuation.
