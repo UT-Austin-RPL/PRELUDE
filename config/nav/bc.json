@@ -34,7 +34,7 @@
         }
     },
     "train": {
-        "data": "./save/dataset_sim/demo_corl2022.hdf5",
+        "data": "./save/dataset_sim/demo_sim.hdf5",
         "output_dir": "../save/bc_checkpoint/bc_sim",
         "num_data_workers": 0,
         "hdf5_cache_mode": "all",

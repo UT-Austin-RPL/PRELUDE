@@ -1,7 +1,7 @@
 # PRELUDE
 [Mingyo Seo](https://mingyoseo.com/), [Ryan Gupta](), [Yifeng Zhu](https://www.cs.utexas.edu/~yifengz), [Alexy Skoutnev](https://alexyskoutnev.github.io/alexyskoutnev-github.io/index.html), [Luis Sentis](https://sites.google.com/view/lsentis), [Yuke Zhu](https://www.cs.utexas.edu/~yukez/)
 
-[Project](https://sites.google.com/view/perceptive-legged-locomotion)
+[Project](https://ut-austin-rpl.github.io/PRELUDE) | [arXiv]()
 
 ![intro](pipeline.png)
 
@@ -46,7 +46,7 @@ For training the Gait Controller, please use the following commands. Trained fil
 python3 scripts/train_gait.py --gait_policy=GAIT_POLICY
 ```
 
-For training Navigation Controller, please use the following commands. Trained files would be saved in `./save/bc_checkpoint`.
+For training Navigation Controller, please use the following commands. You need to create or download ([link](https://utexas.box.com/s/vuneto210i5o5c8vi09cxt49dta2may3)) a HDF5-format Dataset file for training. Trained files would be saved in `./save/bc_checkpoint`.
 ```
 python3 scripts/train_nav.py
 ```
@@ -66,8 +66,11 @@ python3 scripts/eval_nav.py --gait_policy=GAIT_POLICY --nav_policy=NAV_POLICY --
 
 
 ## Dataset and pre-trained models
-We provide our demonstration dataset in simulation environments ([link]()) and trained models of the Navigation Controller ([link](https://utexas.box.com/s/l6n5unyswuol4gxwam552u1jkogbaakq)) and the Gait Controller ([link](https://utexas.box.com/s/uv41n7550t1ao7wv0io0er2s8r2ivu2x)).
+We provide our demonstration dataset in simulation environments ([link](https://utexas.box.com/s/vuneto210i5o5c8vi09cxt49dta2may3)) and trained models of the Navigation Controller ([link](https://utexas.box.com/s/l6n5unyswuol4gxwam552u1jkogbaakq)) and the Gait Controller ([link](https://utexas.box.com/s/uv41n7550t1ao7wv0io0er2s8r2ivu2x)).
 
+
+## Implementation Details
+Please see [this page](implementation.md) for more information about our implementation details including training procedures and hyperparameters.
 
 ## Citing
 ```
