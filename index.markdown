@@ -225,7 +225,7 @@ src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
 <h1 align="center">Real Robot Evaluation</h1>
 
   <table width=800px><tr><td> <p align="justify" width="20%">We perform real-world trials where the robot traverses 15m-length tracks in different configurations. We compare it with our self-baseline PRELUDE (A1 Default Gait), a variant of our final model, using the robot’s default model-based controller instead. 
-  PRELUDE (Ours) tracks trajectories more robustly (with a <highlight>1.11x</highlight> longer average length traversed and a <highlight>20%</highlight> increase in success rate) than PRELUDE (A1 Default Gait).
+  PRELUDE (Ours) tracks trajectories more robustly (with a 20% increase in success rate) than PRELUDE (A1 Default Gait).
   We observed that PRELUDE (A1 Default Gait) drifts aggressively after a high-speed turning and collides into the wall, while PRELUDE (Ours) turns rapidly to bypass the walking crowd and completes the trial successfully.
 
   </p></td></tr></table>
