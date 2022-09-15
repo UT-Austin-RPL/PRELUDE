@@ -14,7 +14,15 @@ categories: projects
 
 <script src="./src/popup.js" type="text/javascript"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQHH255W04"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VQHH255W04');
+</script>
 
 <script type="text/javascript">
 // redefining default features
@@ -238,7 +246,7 @@ src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
     <tbody>
       <tr>
         <td align="center" valign="middle">
-          <video muted autoplay loop width="798">
+          <video muted controls width="798">
             <source src="./src/video/evaluation.mp4"  type="video/mp4">
           </video>
         </td>
@@ -279,23 +287,27 @@ src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
     <tbody>
       <tr>
         <td align="center" valign="middle">
-          <video muted autoplay loop width="600">
+          <video muted controls width="394">
             <source src="./src/video/deploy1.mp4"  type="video/mp4">
           </video>
         </td>
-      </tr>
 
-      <tr>
         <td align="center" valign="middle">
-          <video muted autoplay loop width="600">
-            <source src="./src/video/deploy3.mp4"  type="video/mp4">
+          <video muted controls width="394">
+            <source src="./src/video/deploy2.mp4"  type="video/mp4">
           </video>
         </td>
       </tr>
 
       <tr>
         <td align="center" valign="middle">
-          <video muted autoplay loop width="600">
+          <video muted controls width="394">
+            <source src="./src/video/deploy3.mp4"  type="video/mp4">
+          </video>
+        </td>
+
+        <td align="center" valign="middle">
+          <video muted controls width="394">
             <source src="./src/video/deploy4.mp4"  type="video/mp4">
           </video>
         </td>
@@ -313,15 +325,6 @@ src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
 <br><br>
 -->
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQHH255W04"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VQHH255W04');
-</script>
 
 <!-- </center></div></body></div> -->
 
