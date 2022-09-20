@@ -107,6 +107,7 @@ src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script>
 a {
   color: #bf5700;
   text-decoration: none;
+  font-weight: 500;
 }
 </style>
 
@@ -120,19 +121,19 @@ highlight {
 
 <div id="primarycontent">
 <center><h1><strong>Learning to Walk by Steering: Perceptive Quadrupedal Locomotion in Dynamic Environments</strong></h1></center>
-<center><h2><strong>
+<center><h2>
     <a href="https://mingyoseo.com/">Mingyo Seo</a>&nbsp;&nbsp;&nbsp;
-    <a>Ryan Gupta</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://sites.utexas.edu/hcrl/people/">Ryan Gupta</a>&nbsp;&nbsp;&nbsp;
     <a href="https://zhuyifengzju.github.io/">Yifeng Zhu</a>&nbsp;&nbsp;&nbsp;
     <a href="https://alexyskoutnev.github.io/alexyskoutnev-github.io/">Alexy Skoutnev</a>&nbsp;&nbsp;&nbsp;<br>
     <a href="https://www.ae.utexas.edu/people/faculty/faculty-directory/sentis">Luis Sentis</a>&nbsp;&nbsp;&nbsp; 
     <a href="https://cs.utexas.edu/~yukez">Yuke Zhu</a>&nbsp;&nbsp;&nbsp;
-   </strong></h2>
-    <center><h2><strong>
+  </h2>
+    <center><h2>
         <a href="https://www.cs.utexas.edu/">The University of Texas at Austin</a>&nbsp;&nbsp;&nbsp;   
-    </strong></h2></center>
+    </h2></center>
 
-	<center><h2><strong><a href="">Paper</a> | <a href="https://github.com/UT-Austin-RPL/PRELUDE">Code</a> | <a href="./src/bib.txt">Bibtex</a> </strong></h2></center>
+	<center><h2><a href="http://arxiv.org/abs/2209.09233">Paper</a> | <a href="https://github.com/UT-Austin-RPL/PRELUDE">Code</a></h2></center>
 
  <center><p><span style="font-size:20px;"></span></p></center>
 <!-- <p> -->
@@ -317,14 +318,25 @@ src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
   </table>
 
 
-<!--
-<br><hr> <table align=center width=800px> <tr> <td> <left>
-<center><h1>Acknowledgements</h1></center> -
- The webpage template was borrowed from some <a href="https://nvlabs.github.io/SPADE/">GAN folks</a>.
-</left></td></tr></table>
-<br><br>
--->
+<hr>
+<center><h1>Citation</h1></center>
 
-
-<!-- </center></div></body></div> -->
+<table align=center width=800px>
+  <tr>
+    <td>
+    <!-- <left> -->
+    <pre><code style="display:block; overflow-x: auto">
+      @inproceedings{seo2022learning,
+        title={Learning to Walk by Steering: Perceptive Quadrupedal Locomotion 
+          in Dynamic Environments},
+        author={Seo, Mingyo and Gupta, Ryan and Zhu, Yifeng and Skoutnev, Alexy
+          and Sentis, Luis and Zhu, Yuke},
+        booktitle={arXiv preprint arXiv:2209.09233},
+        year={2022}
+      }
+    </code></pre>
+    <!-- </left> -->
+    </td>
+  </tr>
+</table>
 
