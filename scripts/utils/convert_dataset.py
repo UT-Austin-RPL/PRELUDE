@@ -10,12 +10,12 @@ def parse_args():
     
     parser.add_argument(
             "--folder",
-            default="./save/dataset_sim/corl2022/",
+            default="./save/dataset_sim/demo_sim/",
             type=Path,
             )
     parser.add_argument(
             "--demo_path",
-            default="./save/dataset_sim/demo_corl2022.hdf5",
+            default="./save/dataset_sim/demo_sim.hdf5",
             type=Path,
             )
 

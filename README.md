@@ -40,7 +40,7 @@ Then, please run the following commands to split the dataset for training and ev
 ```
 python3 scripts/utils/split_train_val.py --dataset=PATH_TO_TARGET_FILE
 ```
-Dataset files consist of sequences of the following values.
+Dataset files consist of sequences of the following data structure.
 ```
 hdf5 dataset
 ├── agentview_rgb: 212x120x3 array
@@ -57,7 +57,7 @@ For training the Gait Controller, please use the following commands. Trained fil
 python3 scripts/train_gait.py --gait_policy=GAIT_POLICY
 ```
 
-For training Navigation Controller, please use the following commands. You need to create or download ([link](https://utexas.box.com/s/vuneto210i5o5c8vi09cxt49dta2may3)) a HDF5-format Dataset file for training. Trained files would be saved in `./save/bc_checkpoint`.
+For training Navigation Controller, please use the following commands. You need to create or download ([link](https://utexas.box.com/s/vuneto210i5o5c8vi09cxt49dta2may3)) an `hdf5`-format Dataset file for training. Trained files would be saved in `./save/bc_checkpoint`.
 ```
 python3 scripts/train_nav.py
 ```
@@ -81,7 +81,7 @@ We provide our demonstration dataset in simulation environments ([link](https://
 
 
 ## Implementation Details
-Please see [this page](implementation.md) for more information about our implementation details including training procedures and hyperparameters.
+Please see [this page](implementation.md) for more information about our implementation details, including training procedures and hyperparameters.
 
 ## Citing
 ```
