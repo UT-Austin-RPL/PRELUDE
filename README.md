@@ -1,7 +1,7 @@
-# PRELUDE
-[Mingyo Seo](https://mingyoseo.com/), [Ryan Gupta](), [Yifeng Zhu](https://www.cs.utexas.edu/~yifengz), [Alexy Skoutnev](https://alexyskoutnev.github.io/alexyskoutnev-github.io/index.html), [Luis Sentis](https://sites.google.com/view/lsentis), [Yuke Zhu](https://www.cs.utexas.edu/~yukez/)
+# Learning to Walk by Steering: Perceptive Quadrupedal Locomotion in Dynamic Environments
+[Mingyo Seo](https://mingyoseo.com), [Ryan Gupta](https://sites.utexas.edu/hcrl/people/), [Yifeng Zhu](https://www.cs.utexas.edu/~yifengz), [Alexy Skoutnev](https://alexyskoutnev.github.io/alexyskoutnev-github.io/index.html), [Luis Sentis](https://sites.google.com/view/lsentis), [Yuke Zhu](https://www.cs.utexas.edu/~yukez)
 
-[Project](https://ut-austin-rpl.github.io/PRELUDE) | [arXiv]()
+[Project](https://ut-austin-rpl.github.io/PRELUDE) | [arXiv](http://arxiv.org/abs/2209.09233)
 
 ![intro](pipeline.png)
 
@@ -11,6 +11,7 @@ We tackle the problem of perceptive locomotion in dynamic environments. In this 
 If you find our work useful in your research, please consider [citing](#citing).
 
 ## Dependencies
+- Python 3.8.5 (recommended)
 - [Robomimic](https://github.com/ARISE-Initiative/robomimic/)
 - [Tianshou](https://github.com/thu-ml/tianshou/)
 - [PyBullet](https://github.com/bulletphysics/bullet3/)
@@ -29,15 +30,25 @@ For collecting human demonstration data for Navigation Controller, please use th
 ```
 python3 scripts/demo_nav.py --env_type=ENV_TYPE --demo_name=DEMO_NAME
 ```
-You may be able to specify the difficulty of environments by changing ENV_TYPE. Collected data would be saved in `./save/data_sim/DEMO_NAME`. Rendering videos and extra logs would be saved in `./save/raw_sim/DEMO_NAME`.
+You may be able to specify the difficulty of environments by changing ENV_TYPE. Collected data would be saved in `./save/data_sim/DEMO_NAME` as `pickle` files. Rendering videos and extra logs would be saved in `./save/raw_sim/DEMO_NAME`.
 
-To convert the collected data into .hdf5 dataset file, please use the following commands. The converted dataset would be saved in `PATH_TO_TARGET_FILE`. 
+To convert the collected data into `hdf5` dataset file, please use the following commands. The converted dataset would be saved in `PATH_TO_TARGET_FILE`. 
 ```
 python3 scripts/utils/convert_dataset.py --folder=PATH_TO_DATA_FOLDER --demo_path=PATH_TO_TARGET_FILE
 ```
 Then, please run the following commands to split the dataset for training and evaluation. The script would overwrite the split dataset would on the original dataset file.
 ```
 python3 scripts/utils/split_train_val.py --dataset=PATH_TO_TARGET_FILE
+```
+Dataset files consist of sequences of the following values.
+```
+hdf5 dataset
+├── agentview_rgb: 212x120x3 array
+├── agentview_depth: 212x120x1 array
+├── yaw: 2D value
+├── actions: 2D value
+├── dones: 1D value
+└── rewards: 1D value (not used)
 ```
 
 ## Training
@@ -74,4 +85,10 @@ Please see [this page](implementation.md) for more information about our impleme
 
 ## Citing
 ```
+@inproceedings{seo2022learning,
+   title={Learning to Walk by Steering: Perceptive Quadrupedal Locomotion in Dynamic Environments},
+   author={Seo, Mingyo and Gupta, Ryan and Zhu, Yifeng and Skoutnev, Alexy and Sentis, Luis and Zhu, Yuke},
+   booktitle={arXiv preprint arXiv:2209.09233},
+   year={2022}
+}
 ```

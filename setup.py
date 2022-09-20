@@ -1,7 +1,7 @@
 import io
 from setuptools import setup, find_packages
 
-__version__ = '1.0.0'
+__version__ = '0.1.0'
 
 with io.open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
@@ -9,20 +9,16 @@ with io.open('README.md', 'r', encoding='utf-8') as fh:
 setup(
     name='prelude',
     version=__version__,
-    author='anonymous authors',
+    author='Mingyo Seo',
     author_email='',
     description=('Python Environments for PRELUDE'),
     long_description=open("README.md", encoding="utf8").read(),
     long_description_content_type='text/markdown',
     license="GPLv3",
     python_requires=">=3.6",
-    keywords="PRELUDE (CoRL 2022)",
+    keywords="PRELUDE",
     packages=[package for package in find_packages()
-                if package.startswith('a1sim')]
-            +[package for package in find_packages(
-                exclude=["test", "test.*", "examples", "examples.*", "docs", "docs.*"])
-              if package.startswith('tianshou')]
-            +[package for package in find_packages() if package.startswith("robomimic")],
+                if package.startswith('a1sim')],
     tests_require=['pytest', 'mock'],
     include_package_data=True,
     install_requires=[
@@ -52,8 +48,10 @@ setup(
         "termcolor",
         "imageio",
         "imageio-ffmpeg",
-        "egl_probe>=1.0.1"
+        "egl_probe>=1.0.1",
         "wandb",
+        "robomimic==0.2.0",
+        "tianshou==0.4.1"
     ],
     extras_require={
         "dev": [
