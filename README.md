@@ -52,27 +52,27 @@ hdf5 dataset
 ```
 
 ## Training
-For training the Gait Controller, please use the following commands. Trained files would be saved in `./save/rl_checkpoint/gait/GAIT_POLICY`
+For training the Gait Controller, please use the following commands. The configuration at `./config/gait/GAIT_CONFIG` would be used for training. Trained files would be saved in `./save/rl_checkpoint/gait/GAIT_POLICY`.
 ```
-python3 scripts/train_gait.py --gait_policy=GAIT_POLICY
+python3 scripts/train_gait.py --config=GAIT_CONFIG --gait_policy=GAIT_POLICY
 ```
 
-For training Navigation Controller, please use the following commands. You need to create or download ([link](https://utexas.box.com/s/vuneto210i5o5c8vi09cxt49dta2may3)) an `hdf5`-format Dataset file for training. Trained files would be saved in `./save/bc_checkpoint`.
+For training Navigation Controller, please use the following commands. You need to create or download ([link](https://utexas.box.com/s/vuneto210i5o5c8vi09cxt49dta2may3)) an `hdf5`-format Dataset file for training. The configuration at `./config/nav/NAV_CONFIG.json` would be used for training. Trained files would be saved in `./save/bc_checkpoint`.
 ```
-python3 scripts/train_nav.py
+python3 scripts/train_nav.py --config=NAV_CONFIG
 ```
 
 ## Evaluation
 You should locate pre-trained data to `./save/*`. These pre-trained data would be released later.
 
-For evaluating Gait Controller only, please use the following commands. The checkpoints of the Gait Controller at `./save/rl_checkpoint/gait/RL_POLICY` would be loaded.
+For evaluating Gait Controller only, please use the following commands. The checkpoints of the Gait Controller at `./save/rl_checkpoint/gait/GAIT_POLICY` would be loaded.
 ```
 python3 scripts/eval_gait.py --gait_policy=GAIT_POLICY
 ```
 
 To evaluate PRELUDE with both Gait Controller and Navigation Controller, please use the following commands. The checkpoints of the Navigation Controller at `./save/bc_checkpoint/NAV_POLICY` would be loaded.
 ```
-python3 scripts/eval_nav.py --gait_policy=GAIT_POLICY --nav_policy=NAV_POLICY --gait_policy=GAIT_POLICY
+python3 scripts/eval_nav.py --gait_policy=GAIT_POLICY --nav_policy=NAV_POLICY
 ```
 
 
@@ -81,7 +81,7 @@ We provide our demonstration dataset in simulation environments ([link](https://
 
 
 ## Implementation Details
-Please see [this page](implementation.md) for more information about our implementation details, including training procedures and hyperparameters.
+Please see [this page](implementation.md) for more information about our implementation details, including the model architecture and training procedures.
 
 ## Citing
 ```
