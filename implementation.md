@@ -12,9 +12,9 @@ Each tuple in the buffer $&#8492;\_t$ is a 48D vector, containing $u_i\in&#8477;
 We use 1D temporal convolution to transform the input $T+1$ tuples $&#8492;\_t$ into a 32D vector. Specifically, the 48D tuple of each time step is first encoded by a linear layer, followed by 3 layers of temporal convolution. The feature from temporal convolution is flattened and projected by another linear layer into the 32D vector.
 We concatenate the 48D tuple of the most recent state $(u_t,q_t,a_{t-1})$ and the encoded 32D vector of history states. This concatenated feature is passed through a two-layer MLP of 256 hidden units to produce a Gaussian distribution of joint-space actions. The reward function for training $\pi_L$ consists of the terms for tracking commands, balancing the body, minimizing energy consumption, and regulating foot contacts, as below.
 
-- Tracking commands:  $K(k_1 |{{e_{\psi}\over{\Delta t}}|) e^{k_2 |\boldsymbol{e}_v|}} $
-- Balancing the body:  $K(k_3|\boldsymbol{e}_v|)K (k_4 |\boldsymbol{\theta}|)$
-- Minimizing energy consumption:  $K(k_3|\boldsymbol{e}_v|) E$
+- Tracking commands:  $K(k_1 |{e_{\psi}|^2) e^{k_2 |\boldsymbol{e}_{xy}|}} $
+- Balancing the body:  $K(k_3|\boldsymbol{e}_{xy}|^2)K (k_4 |\boldsymbol{\theta}|^2)$
+- Minimizing energy consumption:  $K(k_3|\boldsymbol{e}_{xy}|^2) E$
 - Regulating foot contacts: $k_5 \left(\max(n_1-3, 0) - n_2 \right)$
 
 where $K(\cdot) := 1- \tanh (\cdot)$ and $k_1, ... k_5$ are given as positive weight coefficients. $E$ is the energy consumption, $\boldsymbol{\theta}$ is the vector of roll and pitch,  $\boldsymbol{e}\_{xy}$ is the linear velocity errors in the x and y axes, and ${e}_{\psi}$ is the yaw rate error. $n_1$ , $n_2$ are number of foot contacts, and non-foot contacts.
