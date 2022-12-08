@@ -326,13 +326,15 @@ src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
     <td>
     <!-- <left> -->
     <pre><code style="display:block; overflow-x: auto">
-      @inproceedings{seo2022learning,
+      @misc{seo2022learning,
         title={Learning to Walk by Steering: Perceptive Quadrupedal Locomotion 
           in Dynamic Environments},
         author={Seo, Mingyo and Gupta, Ryan and Zhu, Yifeng and Skoutnev, Alexy
           and Sentis, Luis and Zhu, Yuke},
-        booktitle={arXiv preprint arXiv:2209.09233},
         year={2022}
+        eprint={2209.09233},
+        archivePrefix={arXiv},
+        primaryClass={cs.RO}
       }
     </code></pre>
     <!-- </left> -->
