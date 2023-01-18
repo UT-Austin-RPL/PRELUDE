@@ -44,6 +44,7 @@ body {
   }
   h2 {
     font-weight:300;
+    font-size:24px;
   }
   h3 {
     font-weight:300;
@@ -223,7 +224,7 @@ valign="middle"><a href="./src/figure/pipeline.png"> <img
 src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
 </tr> </tbody> </table>
 
-<table width=800px><tr><td> <p align="justify" width="20%">The high-level navigation policy generates the target velocity command at 10Hz from the onboard RGB-D camera observation and robot heading. The target velocity command, including linear and angular velocities, is used as input to the low-level gait controller along with the buffer of recent robot states. The low-level gait policy predicts the joint-space actions as the desired joint positions at 38Hz and sends them to the quadruped robot for actuation. More implementation details can be found in <a href="https://github.com/UT-Austin-RPL/PRELUDE/blob/main/implementation.md">this page</a>.
+<table align=center width=800px><tr><td> <p align="justify" width="20%">The high-level navigation policy generates the target velocity command at 10Hz from the onboard RGB-D camera observation and robot heading. The target velocity command, including linear and angular velocities, is used as input to the low-level gait controller along with the buffer of recent robot states. The low-level gait policy predicts the joint-space actions as the desired joint positions at 38Hz and sends them to the quadruped robot for actuation. More implementation details can be found in <a href="https://github.com/UT-Austin-RPL/PRELUDE/blob/main/implementation.md">this page</a>.
 </p></td></tr></table>
 <br>
 
@@ -231,7 +232,7 @@ src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
 
 <h1 align="center">Real Robot Evaluation</h1>
 
-  <table width=800px><tr><td> <p align="justify" width="20%">We perform real-world trials where the robot traverses 15m-length tracks in different configurations. We compare it with our self-baseline PRELUDE (A1 Default Gait), a variant of our final model, using the robot’s default model-based controller instead. 
+  <table align=center width=800px><tr><td> <p align="justify" width="20%">We perform real-world trials where the robot traverses 15m-length tracks in different configurations. We compare it with our self-baseline PRELUDE (A1 Default Gait), a variant of our final model, using the robot’s default model-based controller instead. 
   PRELUDE tracks trajectories more robustly (with a 20% increase in success rate) than PRELUDE (A1 Default Gait).
   We observed that PRELUDE (A1 Default Gait) drifts aggressively after a high-speed turning and collides into the wall, while PRELUDE turns rapidly to bypass the walking crowd and completes the trial successfully.
 
@@ -266,7 +267,7 @@ src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
 
 <h1 align="center">Deploying in Unseen Environments</h1>
 
-  <table width=800px><tr><td> <p align="justify" width="20%">
+  <table align=center width=800px><tr><td> <p align="justify" width="20%">
   We deployed in unseen human-centered environments with static and dynamic obstacles. It exhibits robust locomotion behaviors with on-board visual perception.
   </p></td></tr></table>
 
