@@ -44,9 +44,12 @@ body {
   }
   h2 {
     font-weight:300;
-    font-size:24px;
   }
-  
+  h3 {
+    font-weight:300;
+  }
+
+	
 IMG {
   PADDING-RIGHT: 0px;
   PADDING-LEFT: 0px;
