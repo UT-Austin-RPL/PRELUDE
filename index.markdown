@@ -122,18 +122,20 @@ highlight {
 <div id="primarycontent">
 <center><h1><strong>Learning to Walk by Steering: Perceptive Quadrupedal Locomotion in Dynamic Environments</strong></h1></center>
 <center><h2>
-    <a href="https://mingyoseo.com/">Mingyo Seo</a>&nbsp;&nbsp;&nbsp;
-    <a href="https://sites.utexas.edu/hcrl/people/">Ryan Gupta</a>&nbsp;&nbsp;&nbsp;
-    <a href="https://zhuyifengzju.github.io/">Yifeng Zhu</a>&nbsp;&nbsp;&nbsp;
-    <a href="https://alexyskoutnev.github.io/alexyskoutnev-github.io/">Alexy Skoutnev</a>&nbsp;&nbsp;&nbsp;<br>
-    <a href="https://www.ae.utexas.edu/people/faculty/faculty-directory/sentis">Luis Sentis</a>&nbsp;&nbsp;&nbsp; 
-    <a href="https://cs.utexas.edu/~yukez">Yuke Zhu</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://mingyoseo.com/">Mingyo Seo<sup>1</sup></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://sites.utexas.edu/hcrl/people/">Ryan Gupta<sup>1</sup></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://zhuyifengzju.github.io/">Yifeng Zhu<sup>1</sup></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://alexyskoutnev.github.io/alexyskoutnev-github.io/">Alexy Skoutnev<sup>2</sup></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://www.ae.utexas.edu/people/faculty/faculty-directory/sentis">Luis Sentis<sup>1</sup></a>&nbsp;&nbsp;&nbsp; 
+    <a href="https://cs.utexas.edu/~yukez">Yuke Zhu<sup>1</sup></a>&nbsp;&nbsp;&nbsp;
   </h2>
-    <center><h2>
-        <a href="https://www.cs.utexas.edu/">The University of Texas at Austin</a>&nbsp;&nbsp;&nbsp;   
-    </h2></center>
-
-	<center><h2><a href="http://arxiv.org/abs/2209.09233">Paper</a> | <a href="https://github.com/UT-Austin-RPL/PRELUDE">Code</a></h2></center>
+  <h2>
+    <a href="https://www.utexas.edu/"><sup>1</sup>The University of Texas at Austin</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://www.vanderbilt.edu/"><sup>2</sup>Vanderbilt University</a>&nbsp;&nbsp;&nbsp;
+  </h2>
+  <h2>IEEE International Conference on Robotics and Automation (ICRA), 2023</h2>
+  <h2><a href="http://arxiv.org/abs/2209.09233">Paper</a> | <a href="https://github.com/UT-Austin-RPL/PRELUDE">Code</a></h2>
+  </center>
 
  <center><p><span style="font-size:20px;"></span></p></center>
 <!-- <p> -->
