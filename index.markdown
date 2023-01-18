@@ -44,6 +44,7 @@ body {
   }
   h2 {
     font-weight:300;
+    font-size:24px;
   }
   
 IMG {
@@ -133,7 +134,7 @@ highlight {
     <a href="https://www.utexas.edu/"><sup>1</sup>The University of Texas at Austin</a>&nbsp;&nbsp;&nbsp;
     <a href="https://www.vanderbilt.edu/"><sup>2</sup>Vanderbilt University</a>
   </h2>
-  <h2>IEEE International Conference on Robotics and Automation (ICRA), 2023</h2>
+  <h3>IEEE International Conference on Robotics and Automation (ICRA), 2023</h3>
   <h2><a href="http://arxiv.org/abs/2209.09233">Paper</a> | <a href="https://github.com/UT-Austin-RPL/PRELUDE">Code</a></h2>
   </center>
 
