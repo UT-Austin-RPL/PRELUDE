@@ -333,15 +333,13 @@ src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
     <td>
     <!-- <left> -->
     <pre><code style="display:block; overflow-x: auto">
-      @misc{seo2022learning,
-        title={Learning to Walk by Steering: Perceptive Quadrupedal Locomotion 
+      @inproceedings{seo2022prelude,
+        title={Learning to Walk by Steering: Perceptive Quadrupedal Locomotion
           in Dynamic Environments},
         author={Seo, Mingyo and Gupta, Ryan and Zhu, Yifeng and Skoutnev, Alexy
           and Sentis, Luis and Zhu, Yuke},
-        year={2022}
-        eprint={2209.09233},
-        archivePrefix={arXiv},
-        primaryClass={cs.RO}
+        booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+        year={2023}
       }
     </code></pre>
     <!-- </left> -->
