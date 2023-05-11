@@ -85,10 +85,10 @@ Please see [this page](implementation.md) for more information about our impleme
 
 ## Citing
 ```
-@inproceedings{seo2022learning,
+@inproceedings{seo2022prelude,
    title={Learning to Walk by Steering: Perceptive Quadrupedal Locomotion in Dynamic Environments},
    author={Seo, Mingyo and Gupta, Ryan and Zhu, Yifeng and Skoutnev, Alexy and Sentis, Luis and Zhu, Yuke},
-   booktitle={arXiv preprint arXiv:2209.09233},
-   year={2022}
+   booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+   year={2023}
 }
 ```
