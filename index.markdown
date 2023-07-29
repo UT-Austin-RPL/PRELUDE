@@ -175,7 +175,7 @@ highlight {
   <tbody>
     <tr>
       <td align="center" valign="middle">
-        <video muted autoplay loop width="800">
+        <video muted autoplay loop width="798">
           <source src="./src/video/header.mp4"  type="video/mp4">
         </video>
       </td>
@@ -213,7 +213,7 @@ We tackle the problem of perceptive locomotion in dynamic environments. In this 
                 <tr>
                     <td>
   <p align="justify" width="20%">
-  Overview of PRELUDE. We introduce a control hierarchy where the high-level controller, trained with imitation learning, sets navigation commands and the low-level gait controller, trained with reinforcement learning, realizes the target commands through joint-space actuation. This combination enables us to effectively deploy the entire hierarchy on quadrupedal robots in real-world environments.
+  We introduce a control hierarchy where the high-level controller, trained with imitation learning, sets navigation commands and the low-level gait controller, trained with reinforcement learning, realizes the target commands through joint-space actuation. This combination enables us to effectively deploy the entire hierarchy on quadrupedal robots in real-world environments.
 </p></td></tr></table>
 
   
