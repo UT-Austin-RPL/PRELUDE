@@ -125,7 +125,7 @@ highlight {
 </style>
 
 <div id="primarycontent">
-<center><h1><strong>Learning to Walk by Steering: Perceptive Quadrupedal Locomotion in Dynamic Environments</strong></h1></center>
+<center><h1><strong>Learning to Walk by Steering:<br>Perceptive Quadrupedal Locomotion in Dynamic Environments</strong></h1></center>
 <center><h2>
     <a href="https://mingyoseo.com/">Mingyo Seo<sup>1</sup></a>&nbsp;&nbsp;&nbsp;
     <a href="https://sites.utexas.edu/hcrl/people/">Ryan Gupta<sup>1</sup></a>&nbsp;&nbsp;&nbsp;
