@@ -36,7 +36,7 @@ To convert the collected data into `hdf5` dataset file, please use the following
 ```
 python3 scripts/utils/convert_dataset.py --folder=PATH_TO_DATA_FOLDER --demo_path=PATH_TO_TARGET_FILE
 ```
-Then, please run the following commands to split the dataset for training and evaluation. The script would overwrite the split dataset would on the original dataset file.
+Then, please run the following commands to split the dataset for training and evaluation. The script would overwrite the split dataset on the original dataset file.
 ```
 python3 scripts/utils/split_train_val.py --dataset=PATH_TO_TARGET_FILE
 ```
