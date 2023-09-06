@@ -2,7 +2,7 @@
 
 The navigation controller predicts the target velocity commands at 10Hz. The low-level gait controller takes the buffer of recent velocity commands, robot states and previous joint-space actions as input and produces joint-space action commands at 38Hz to actuate the robot. 
 
-![intro](pipeline.png)
+![intro](architecture.png)
 
 ## Navigation Controller 
 The navigation policy uses a ResNet18-backbone network [[1]](#1) as the image encoder. The encoded image features are flattened and concatenated with the 1D heading direction value. The concatenated vector is passed through a two-layer multi-layer perceptron (MLP) with 1024 hidden units in each layer. The input RGB-D images have a size of $212\times 120$. For imitation learning, we develop our behavioral cloning implementations with the robomimic framework [[2]](#2). For the recurrent neural networks, we use LSTM [[3]](#3) of two layers with 400 hidden units for each layer. The GMM policy output has 5 modes.
