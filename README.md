@@ -5,7 +5,7 @@
 
 ![intro](approach.gif)
 
-## Introduction
+## Abstract
 We tackle the problem of perceptive locomotion in dynamic environments. In this problem, a quadruped robot must exhibit robust and agile walking behaviors in response to environmental clutter and moving obstacles. We present a hierarchical learning framework, named PRELUDE, which decomposes the problem of perceptive locomotion into high-level decision making to predict navigation commands and low-level gait generation to realize the target commands. In this framework, we train the high-level navigation controller with imitation learning on human demonstrations collected on a steerable cart and the low-level gait controller with reinforcement learning (RL). Our method is, therefore, able to acquire complex navigation behaviors from human supervision and discover versatile gaits from trial and error. We demonstrate the effectiveness of our approach in simulation and with hardware experiments. Compared to state-of-the-art RL baselines, our method outperforms them by 38.6% in average distance traversed.
 
 If you find our work useful in your research, please consider [citing](#citing).
