@@ -9,7 +9,7 @@ categories: projects
   <title>Learning to Walk by Steering: Perceptive Quadrupedal Locomotion in Dynamic Environments</title>
 
 
-<meta property="og:image" content="src/figure/approach.gif">
+<!-- <meta property="og:image" content="src/figure/approach.gif"> -->
 <meta property="og:title" content="PRELUDE">
 
 <script src="./src/popup.js" type="text/javascript"></script>
@@ -203,7 +203,7 @@ We tackle the problem of perceptive locomotion in dynamic environments. In this 
     <tbody>
       <tr> 
         <td align="center" valign="middle">
-          <a href="src/figure/approach.gif"><img src="src/figure/approach.gif" style="width:100%;"> </a>
+          <a href="./src/figure/approach.gif"><img src="./src/figure/approach.gif" style="width:100%;"> </a>
         </td>
       </tr>
     </tbody>
@@ -220,8 +220,8 @@ We tackle the problem of perceptive locomotion in dynamic environments. In this 
 <br><br><hr> <h1 align="center">Hierarchical Perceptive Locomotion Model</h1> <!-- <h2
 align="center"></h2> --> <table border="0" cellspacing="10"
 cellpadding="0" align="center"><tbody><tr><td align="center"
-valign="middle"><a href="src/figure/pipeline.png"> <img
-src="src/figure/pipeline.png" style="width:100%;"> </a></td>
+valign="middle"><a href="./src/figure/pipeline.png"> <img
+src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
 </tr> </tbody> </table>
 
 <table align=center width=800px><tr><td> <p align="justify" width="20%">The high-level navigation policy generates the target velocity command at 10Hz from the onboard RGB-D camera observation and robot heading. The target velocity command, including linear and angular velocities, is used as input to the low-level gait controller along with the buffer of recent robot states. The low-level gait policy predicts the joint-space actions as the desired joint positions at 38Hz and sends them to the quadruped robot for actuation. More implementation details can be found in <a href="https://github.com/UT-Austin-RPL/PRELUDE/blob/main/implementation.md">this page</a>.
@@ -255,7 +255,7 @@ src="src/figure/pipeline.png" style="width:100%;"> </a></td>
       <tr>
         <td align="center" valign="middle">
           <video muted controls width="798">
-            <source src="src/video/evaluation.mp4"  type="video/mp4">
+            <source src="./src/video/evaluation.mp4"  type="video/mp4">
           </video>
         </td>
       </tr>
@@ -296,13 +296,13 @@ src="src/figure/pipeline.png" style="width:100%;"> </a></td>
       <tr>
         <td align="center" valign="middle">
           <video muted controls width="394">
-            <source src="src/video/deploy1.mp4"  type="video/mp4">
+            <source src="./src/video/deploy1.mp4"  type="video/mp4">
           </video>
         </td>
 
         <td align="center" valign="middle">
           <video muted controls width="394">
-            <source src="src/video/deploy2.mp4"  type="video/mp4">
+            <source src="./src/video/deploy2.mp4"  type="video/mp4">
           </video>
         </td>
       </tr>
@@ -310,13 +310,13 @@ src="src/figure/pipeline.png" style="width:100%;"> </a></td>
       <tr>
         <td align="center" valign="middle">
           <video muted controls width="394">
-            <source src="src/video/deploy3.mp4"  type="video/mp4">
+            <source src="./src/video/deploy3.mp4"  type="video/mp4">
           </video>
         </td>
 
         <td align="center" valign="middle">
           <video muted controls width="394">
-            <source src="src/video/deploy4.mp4"  type="video/mp4">
+            <source src="./src/video/deploy4.mp4"  type="video/mp4">
           </video>
         </td>
       </tr>
