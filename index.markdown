@@ -216,8 +216,9 @@ We tackle the problem of perceptive locomotion in dynamic environments. In this 
   We introduce a control hierarchy where the high-level controller, trained with imitation learning, sets navigation commands and the low-level gait controller, trained with reinforcement learning, realizes the target commands through joint-space actuation. This combination enables us to effectively deploy the entire hierarchy on quadrupedal robots in real-world environments.
 </p></td></tr></table>
 
-  
-<br><br><hr> <h1 align="center">Hierarchical Perceptive Locomotion Model</h1> <!-- <h2
+<hr> 
+
+<h1 align="center">Hierarchical Perceptive Locomotion Model</h1> <!-- <h2
 align="center"></h2> --> <table border="0" cellspacing="10"
 cellpadding="0" align="center"><tbody><tr><td align="center"
 valign="middle"><a href="./src/figure/pipeline.png"> <img
@@ -226,7 +227,6 @@ src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
 
 <table align=center width=800px><tr><td> <p align="justify" width="20%">The high-level navigation policy generates the target velocity command at 10Hz from the onboard RGB-D camera observation and robot heading. The target velocity command, including linear and angular velocities, is used as input to the low-level gait controller along with the buffer of recent robot states. The low-level gait policy predicts the joint-space actions as the desired joint positions at 38Hz and sends them to the quadruped robot for actuation. More implementation details can be found in <a href="https://github.com/UT-Austin-RPL/PRELUDE/blob/main/implementation.md">this page</a>.
 </p></td></tr></table>
-<br>
 
 <hr>
 
@@ -261,7 +261,6 @@ src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
       </tr>
     </tbody>
   </table>
-
 
 <hr>
 
@@ -324,8 +323,8 @@ src="./src/figure/pipeline.png" style="width:100%;"> </a></td>
     </tbody>
   </table>
 
-
 <hr>
+
 <center><h1>Citation</h1></center>
 
 <table align=center width=800px>
