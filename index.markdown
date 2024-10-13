@@ -126,18 +126,18 @@ highlight {
 
 <div id="primarycontent">
 <center><h1><strong>Learning to Walk by Steering:<br>Perceptive Quadrupedal Locomotion in Dynamic Environments</strong></h1></center>
-<center><h2>
+<center><h3>
     <a href="https://mingyoseo.com/">Mingyo Seo<sup>1</sup></a>&nbsp;&nbsp;&nbsp;
     <a href="https://sites.utexas.edu/hcrl/people/">Ryan Gupta<sup>1</sup></a>&nbsp;&nbsp;&nbsp;
     <a href="https://zhuyifengzju.github.io/">Yifeng Zhu<sup>1</sup></a>&nbsp;&nbsp;&nbsp;
     <a href="https://alexyskoutnev.github.io/alexyskoutnev-github.io/">Alexy Skoutnev<sup>2</sup></a>&nbsp;&nbsp;&nbsp;
     <a href="https://www.ae.utexas.edu/people/faculty/faculty-directory/sentis">Luis Sentis<sup>1</sup></a>&nbsp;&nbsp;&nbsp; 
     <a href="https://cs.utexas.edu/~yukez">Yuke Zhu<sup>1</sup></a>
-  </h2>
-  <h2>
+  </h3>
+  <h3>
     <a href="https://www.utexas.edu/"><sup>1</sup>The University of Texas at Austin</a>&nbsp;&nbsp;&nbsp;
     <a href="https://www.vanderbilt.edu/"><sup>2</sup>Vanderbilt University</a>
-  </h2>
+  </h3>
   <h3>IEEE International Conference on Robotics and Automation (ICRA), 2023</h3>
   <h2><a href="http://arxiv.org/abs/2209.09233">Paper</a> | <a href="https://github.com/UT-Austin-RPL/PRELUDE">Code</a></h2>
   </center>
