@@ -4,7 +4,9 @@ permalink: /
 categories: projects
 ---
 
+<link media="all" href="./css/glab.css" type="text/css" rel="StyleSheet">
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Learning to Walk by Steering: Perceptive Quadrupedal Locomotion in Dynamic Environments</title>
 
@@ -13,6 +15,7 @@ categories: projects
 <meta property="og:title" content="PRELUDE">
 
 <script src="./src/popup.js" type="text/javascript"></script>
+<script src="https://kit.fontawesome.com/ef67f68cfb.js" crossorigin="anonymous"></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQHH255W04"></script>
@@ -28,7 +31,6 @@ categories: projects
 // redefining default features
 var _POPUP_FEATURES = 'width=500,height=300,resizable=1,scrollbars=1,titlebar=1,status=1';
 </script>
-<link media="all" href="./css/glab.css" type="text/css" rel="StyleSheet">
 <style type="text/css" media="all">
 body {
     font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -139,7 +141,12 @@ highlight {
     <a href="https://www.vanderbilt.edu/"><sup>2</sup>Vanderbilt University</a>
   </h3>
   <h3>IEEE International Conference on Robotics and Automation (ICRA), 2023</h3>
-  <h2><a href="http://arxiv.org/abs/2209.09233">Paper</a> | <a href="https://github.com/UT-Austin-RPL/PRELUDE">Code</a></h2>
+  <h3>
+    <a href="http://arxiv.org/abs/2209.09233">
+      <i class="ai ai-arxiv"></i> Paper</a> |
+    <a href="https://github.com/UT-Austin-RPL/PRELUDE">
+      <i class="fa-brands fa-github"></i> Code</a>
+  </h3>
   </center>
 
  <center><p><span style="font-size:20px;"></span></p></center>
