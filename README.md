@@ -24,7 +24,7 @@ pip3 install -e .
 ```
 You need to locate asset files to `./data/*`. These asset files are found [here](https://utexas.box.com/s/oa5c39blv9ma4h4lkdkv84n5zj3mxcg5).
 
-## Creating a demo dataset for Navigation Controller
+## Creating a Dataset for Navigation Controller
 
 For collecting human demonstration data for Navigation Controller, please use the following commands. You may need a Spacemouse.
 ```
