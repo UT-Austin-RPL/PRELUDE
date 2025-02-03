@@ -76,7 +76,7 @@ python3 scripts/eval_nav.py --gait_policy=GAIT_POLICY --nav_policy=NAV_POLICY
 ```
 
 
-## Dataset and pre-trained models
+## Dataset and Pre-trained Models
 We provide our demonstration dataset in simulation environments ([link](https://utexas.box.com/s/vuneto210i5o5c8vi09cxt49dta2may3)) and trained models of the Navigation Controller ([link](https://utexas.box.com/s/l6n5unyswuol4gxwam552u1jkogbaakq)) and the Gait Controller ([link](https://utexas.box.com/s/uv41n7550t1ao7wv0io0er2s8r2ivu2x)).
 
 
