@@ -13,7 +13,7 @@ categories: projects
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta property="og:title" content="PRELUDE">
 <meta property="og:description" content="Learning to Walk by Steering: Perceptive Quadrupedal Locomotion in Dynamic Environments">
-<meta property="og:image" content="raw.githubusercontent.com/UT-Austin-RPL/PRELUDE/website/src/figure/approach.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/UT-Austin-RPL/PRELUDE/website/src/figure/approach.gif">
 <meta property="og:url" content="https://ut-austin-rpl.github.io/PRELUDE/">
 
 <title>Learning to Walk by Steering: Perceptive Quadrupedal Locomotion in Dynamic Environments</title>
@@ -95,7 +95,7 @@ pre {
   word-wrap: break-word;
 }
 table {
-  width:800
+  width:800;
 }
 a {
   color: #bf5700;
@@ -161,8 +161,8 @@ highlight {
   </tbody>
 </table>
 
+<div style="width: 500;">
 <p>
-<div width="500"><p>
   <table align=center width=800px>
     <tr>
       <td>
@@ -173,8 +173,7 @@ We tackle the problem of perceptive locomotion in dynamic environments. In this 
     </tr>
   </table>
 </p>
-  </div>
-</p>
+</div>
 
 <hr>
 
@@ -344,3 +343,5 @@ We deployed in unseen human-centered environments with static and dynamic obstac
   </tr>
 </table>
 
+</div>
+</body>
