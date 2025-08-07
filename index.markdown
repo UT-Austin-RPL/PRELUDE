@@ -160,20 +160,15 @@ highlight {
     </tr>
   </tbody>
 </table>
-
-<div style="width: 500;">
-<p>
-  <table align=center width=800px>
-    <tr>
-      <td>
-<p align="justify" width="20%">
-We tackle the problem of perceptive locomotion in dynamic environments. In this problem, a quadrupedal robot must exhibit robust and agile walking behaviors in response to environmental clutter and moving obstacles. We present a hierarchical learning framework, named <b>PRELUDE</b>, which decomposes the problem of perceptive locomotion into high-level decision-making to predict navigation commands and low-level gait generation to realize the target commands. In this framework, we train the high-level navigation controller with imitation learning on human demonstrations collected on a steerable cart and the low-level gait controller with reinforcement learning (RL). Therefore, our method can acquire complex navigation behaviors from human supervision and discover versatile gaits from trial and error. We demonstrate the effectiveness of our approach in simulation and with hardware experiments.
-</p>
-      </td>
-    </tr>
-  </table>
-</p>
-</div>
+<table align=center width=800px>
+  <tr>
+    <td>
+      <p align="justify" width="20%">
+        We tackle the problem of perceptive locomotion in dynamic environments. In this problem, a quadrupedal robot must exhibit robust and agile walking behaviors in response to environmental clutter and moving obstacles. We present a hierarchical learning framework, named <b>PRELUDE</b>, which decomposes the problem of perceptive locomotion into high-level decision-making to predict navigation commands and low-level gait generation to realize the target commands. In this framework, we train the high-level navigation controller with imitation learning on human demonstrations collected on a steerable cart and the low-level gait controller with reinforcement learning (RL). Therefore, our method can acquire complex navigation behaviors from human supervision and discover versatile gaits from trial and error. We demonstrate the effectiveness of our approach in simulation and with hardware experiments.
+      </p>
+    </td>
+  </tr>
+</table>
 
 <hr>
 
@@ -190,9 +185,9 @@ We tackle the problem of perceptive locomotion in dynamic environments. In this 
 <table align=center width=800px>
   <tr>
     <td>
-<p align="justify" width="20%">
-We introduce a control hierarchy where the high-level controller, trained with imitation learning, sets navigation commands and the low-level gait controller, trained with reinforcement learning, realizes the target commands through joint-space actuation. This combination enables us to effectively deploy the entire hierarchy on quadrupedal robots in real-world environments.
-</p>
+      <p align="justify" width="20%">
+        We introduce a control hierarchy where the high-level controller, trained with imitation learning, sets navigation commands and the low-level gait controller, trained with reinforcement learning, realizes the target commands through joint-space actuation. This combination enables us to effectively deploy the entire hierarchy on quadrupedal robots in real-world environments.
+      </p>
     </td>
   </tr>
 </table>
@@ -204,9 +199,9 @@ We introduce a control hierarchy where the high-level controller, trained with i
   <tbody>
     <tr>
       <td align="center" valign="middle">
-	<a href="./src/figure/pipeline.png">
-	  <img src="./src/figure/pipeline.png" style="width:100%;">
-	</a>
+	      <a href="./src/figure/pipeline.png">
+	        <img src="./src/figure/pipeline.png" style="width:100%;">
+	      </a>
       </td>
     </tr>
   </tbody>
@@ -215,9 +210,9 @@ We introduce a control hierarchy where the high-level controller, trained with i
 <table align=center width=800px>
   <tr>
     <td>
-<p align="justify" width="20%">
-The high-level navigation policy generates the target velocity command at 10Hz from the onboard RGB-D camera observation and robot heading. The target velocity command, including linear and angular velocities, is used as input to the low-level gait controller along with the buffer of recent robot states. The low-level gait policy predicts the joint-space actions as the desired joint positions at 38Hz and sends them to the quadruped robot for actuation. More implementation details can be found in <a href="https://github.com/UT-Austin-RPL/PRELUDE/blob/main/implementation.md">this page</a>.
-</p>
+      <p align="justify" width="20%">
+        The high-level navigation policy generates the target velocity command at 10Hz from the onboard RGB-D camera observation and robot heading. The target velocity command, including linear and angular velocities, is used as input to the low-level gait controller along with the buffer of recent robot states. The low-level gait policy predicts the joint-space actions as the desired joint positions at 38Hz and sends them to the quadruped robot for actuation. More implementation details can be found in <a href="https://github.com/UT-Austin-RPL/PRELUDE/blob/main/implementation.md">this page</a>.
+      </p>
     </td>
   </tr>
 </table>
@@ -228,9 +223,9 @@ The high-level navigation policy generates the target velocity command at 10Hz f
 <table align=center width=800px>
   <tr>
     <td>
-<p align="justify" width="20%">
-We perform real-world trials where the robot traverses 15m-length tracks in different configurations. We compare it with our self-baseline PRELUDE (A1 Default Gait), a variant of our final model, using the robot’s default model-based controller instead. PRELUDE tracks trajectories more robustly (with a 20% increase in success rate) than PRELUDE (A1 Default Gait). We observed that PRELUDE (A1 Default Gait) drifts aggressively after a high-speed turning and collides into the wall, while PRELUDE turns rapidly to bypass the walking crowd and completes the trial successfully.
-</p>
+      <p align="justify" width="20%">
+        We perform real-world trials where the robot traverses 15m-length tracks in different configurations. We compare it with our self-baseline PRELUDE (A1 Default Gait), a variant of our final model, using the robot’s default model-based controller instead. PRELUDE tracks trajectories more robustly (with a 20% increase in success rate) than PRELUDE (A1 Default Gait). We observed that PRELUDE (A1 Default Gait) drifts aggressively after a high-speed turning and collides into the wall, while PRELUDE turns rapidly to bypass the walking crowd and completes the trial successfully.
+      </p>
     </td>
   </tr>
 </table>
@@ -251,9 +246,9 @@ We perform real-world trials where the robot traverses 15m-length tracks in diff
   <tbody>
     <tr>
       <td align="center" valign="middle">
-<video muted controls width="798">
-  <source src="./src/video/evaluation.mp4"  type="video/mp4">
-</video>
+        <video muted controls width="798">
+          <source src="./src/video/evaluation.mp4"  type="video/mp4">
+        </video>
       </td>
     </tr>
   </tbody>
@@ -266,9 +261,9 @@ We perform real-world trials where the robot traverses 15m-length tracks in diff
 <table align=center width=800px>
   <tr>
     <td>
-<p align="justify" width="20%">
-We deployed in unseen human-centered environments with static and dynamic obstacles. It exhibits robust locomotion behaviors with on-board visual perception.
-</p>
+      <p align="justify" width="20%">
+        We deployed in unseen human-centered environments with static and dynamic obstacles. It exhibits robust locomotion behaviors with on-board visual perception.
+      </p>
     </td>
   </tr>
 </table>
